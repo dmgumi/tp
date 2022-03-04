@@ -1,0 +1,35 @@
+BS 4.6
+JQUERY 3.5
+
+Créer un formulaire quand on rentre des valeurs ça ressort des mot-clés
+
+Créer un formulaire
+
+Quand on rentre des valeurs
+
+ça ressort des mots clés
+
+et si on change la valeur
+
+ça écrase l'ancienne
+
+•    Element HTML -> tout élément se trouvant dans du HTML
+        -> balise, header, body, texte brut, scripts...
+•    Balise HTML -> <div>, <p>, <section>...
+•    Attribut -> class=""
+•    Propriété -> "href=http://www.google.com"
+•    Méthode -> .text()
+•    Evènement -> .click(cb)
+•    Tableau Javascript [
+    element1: valeur1,
+    element2: valeur2,
+    ...
+]
+•    Objet Javascript -> {
+    "valeur", "valeur"
+}
+•    Objet JSON -> {
+    "valeur", "valeur"
+}
+•    Sélécteur
+.class #id p div span:nth-of-type(2)

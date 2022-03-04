@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="fr">
+      <head>
+            <meta charset="UTF-8" />
+            <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+            <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+            <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+            <link rel="stylesheet" href="assets/css/style.css" />
+            <title>onglet</title>
+      </head>
+      <body>
+            <header>
+                  <h1>GESTION MOT-CLES</h1>
+            </header>
+            <section class="container w-50">
+                  <form id="form" action="">
+                        <div class="col-6">
+                              <label for="product">Nom du product</label>
+                              <input class="form-control my-1" type="text" id="product" name="product" />
+                              <label for="brand">Marque</label>
+                              <input class="form-control my-1" type="text" id="brand" name="brand" />
+                              <label for="model">Modèle</label>
+                              <input class="form-control my-1" type="text" id="model" name="model" />
+                        </div>
+                        <div class="col-6">
+                              <label for="ref">Référence product</label>
+                              <input class="form-control my-1" type="text" id="ref" name="ref" />
+                              <label for="spec">Spécifications</label>
+                              <input class="form-control my-1" type="text" id="spec" name="spec" />
+                              <label for="submit">invisible</label>
+                              <input class="form-control my-1" type="submit" id="submit" name="submit" value="Générer" />
+                        </div>
+                  </form>
+                  <textarea class="form-control my-3 mx-auto w-100" id="reponse" rows="3"></textarea>
+                  <div class="row">
+                        <button id="reset" class="btn btn-primary mx-auto col-5" type="reset">Réinitialiser</button>
+                        <button id="copy" class="btn btn-primary mx-auto col-5">Copier</button>
+                  </div>
+            </section>
+            <footer> </footer>
+            <script src="assets/js/jquery.slim.min.js"></script>
+            <script src="assets/js/bootstrap.bundle.min.js"></script>
+            <script src="assets/js/main.js"></script>
+      </body>
+</html>
