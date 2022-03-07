@@ -8,36 +8,39 @@
             <link rel="stylesheet" href="assets/css/style.css" />
             <title>onglet</title>
       </head>
-      <body>
-            <header>
-                  <h1>GESTION MOT-CLES</h1>
+      <body class="bg-dark">
+            <header class="text-center text-white p-3">
+                  <h1>GÉNÉRATEUR DE MOTS-CLÉS</h1>
             </header>
-            <section class="container w-50">
+            <section class="container px-5 w-75">
                   <form id="form" action="">
-                        <div class="col-6">
-                              <label for="product">Nom du produit</label>
-                              <input class="form-control my-1" type="text" id="product" name="product" />
-                              <label for="brand">Marque</label>
-                              <input class="form-control my-1" type="text" id="brand" name="brand" />
-                              <label for="model">Modèle</label>
-                              <input class="form-control my-1" type="text" id="model" name="model" />
-                        </div>
-                        <div class="col-6">
-                              <label for="ref">Référence produit</label>
-                              <input class="form-control my-1" type="text" id="ref" name="ref" />
-                              <label for="spec">Spécifications</label>
-                              <input class="form-control my-1" type="text" id="spec" name="spec" />
-                              <label for="submit">invisible</label>
-                              <input class="form-control my-1" type="submit" id="submit" name="submit" value="Générer" />
-                        </div>
-                  </form>
-                  <textarea class="form-control my-3 mx-auto w-100" id="reponse" rows="3"></textarea>
-                  <div class="row">
-                        <button id="reset" class="btn btn-primary mx-auto col-5" type="reset">Réinitialiser</button>
-                        <button id="copy" class="btn btn-primary mx-auto col-5">Copier</button>
+                  <div class="container-fluid mx-auto w-100">
+                              <input class="form-control mx-auto my-4 w-50" type="text" id="product" name="product" placeholder="Type de produit" />
+                              <input class="form-control mx-auto my-4 w-50" type="text" id="brand" name="brand" placeholder="Marque" />
+                              <input class="form-control mx-auto my-4 w-50" type="text" id="model" name="model" placeholder="Modèle" />
+                              <input class="form-control mx-auto my-4 w-50" type="text" id="ref" name="ref" placeholder="Référence produit"/>
+                              <input class="form-control mx-auto my-4 w-50" type="text" id="spec" name="spec" placeholder="Specifications" />
                   </div>
+
+                  <div class="container-fluid text-center my-3">
+                        <input class="btn btn-success mx-auto col-5" type="submit" id="submit" name="submit" value="Générer" />
+                  </div>
+
+                  <div class="container-fluid">
+                        <textarea class="form-control my-3 mx-auto w-100" id="reponse" rows="5" placeholder="Vos mot-clés apparaîtront ici"></textarea>
+                  </div>
+
+                  <div class="container-fluid row text-center my-3">
+                        <div class="col-5">
+                              <input class="btn btn-danger mx-auto w-75" type="reset" value="Réinitialiser" />
+                        </div>
+                        <div class="col-2"></div>
+                        <div class="col-5">
+                              <button id="copy" class="btn btn-primary mx-auto w-75">Copier</button>
+                        </div>
+                  </div>
+                  </form>
             </section>
-            <footer> </footer>
             <script src="assets/js/jquery.slim.min.js"></script>
             <script src="assets/js/bootstrap.bundle.min.js"></script>
             <script src="assets/js/main.js"></script>
